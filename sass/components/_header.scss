@@ -30,7 +30,7 @@
     }
 
     @media screen and (min-width: $desctop){
-        margin-right: 305px;
+        margin-right: 281px;
         
     }
 
@@ -108,18 +108,9 @@
 
 .header-container
 {
-    
-    
-    display: flex;
+    display: -webkit-box;
     align-items: center;
     justify-content: space-between;
-
-    // @media screen and (min-width: $tablet) {
-    //     justify-content: right;
-
-    // }
-
-    
 }
 
 
