@@ -1,0 +1,80 @@
+.advantages-section
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+
+    @media screen and (min-width: $desctop){
+        padding-top: 94px;
+    }
+    
+}
+
+.backgrd-icon-advant
+{   background-color: #F5F4FA;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    // @media screen and (min-width: $tablet){
+    //     padding: 25px 142px;
+    //    }
+
+
+
+    @media screen and (min-width: $desctop){
+    margin-bottom: 50px;}
+    
+    
+    
+}
+
+
+
+.advantages-list
+{
+
+    @media screen and (min-width: $desctop){
+        display: flex; }
+    
+
+}
+
+
+// .advantages-link
+// {
+// width: calc((100%-90px) / 4);
+// }
+
+
+// .advantages-link:not(:last-child)
+// {
+//     margin-right: 30px;
+// }
+
+
+.advantages-subtitle
+{
+
+    color: $primery-text-color;
+    font-weight: $title-font-weight;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+
+    @media screen and (max-width: $mobile-top){
+        text-align: center;
+        
+    }
+}
+
+.advantages-disc
+{
+    color: $accent-color;
+    line-height: 1.7;
+    margin: 0px;
+    padding: 0px;
+}
