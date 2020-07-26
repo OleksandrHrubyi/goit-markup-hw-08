@@ -3,7 +3,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-
+    
 
     @media screen and (min-width: $desctop){
         padding-top: 94px;
@@ -19,9 +19,9 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    // @media screen and (min-width: $tablet){
-    //     padding: 25px 142px;
-    //    }
+   
+
+    
 
 
 
@@ -36,33 +36,36 @@
 
 .advantages-list
 {
-
-    @media screen and (min-width: $desctop){
-        display: flex; }
     
+
+    @media screen and (min-width: $tablet){
+        display: flex; 
+    flex-wrap: wrap;
+    }
+    
+    @media screen and (min-width: $desctop)
+    {
+        flex-wrap: nowrap;
+        margin: -15px;
+    }
 
 }
 
 
-// .advantages-link
-// {
-//     &:not(:last-child) {
-//     @media screen and (min-width: $desctop) 
-//        {margin-bottom: 30px;}
-// }
-    
-// width: calc((100%-90px) / 4);
-// }
-
-.advantages-link:not(:last-child) {
-    @media screen and (max-width: $tablet-top) 
-       {margin-bottom: 30px;}
+.advantages-link
+{
+   
+    @media screen and (min-width: $tablet){
+        margin: 15px;
+        width: calc((100% - 4 * 15px) / 2);
+        
+        
+    }
 }
 
-// .advantages-link:not(:last-child)
-// {
-//     margin-right: 30px;
-// }
+
+
+
 
 
 .advantages-subtitle

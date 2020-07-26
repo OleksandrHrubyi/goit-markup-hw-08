@@ -3,8 +3,7 @@
 
        padding-top: 60px;
        padding-bottom: 60px;
-       @media screen and (max-width: $tablet-top) {
-       margin: -15px;}
+      
        
 
 
@@ -22,17 +21,16 @@
 .custumer-list
 {
     display: flex;
-    
-
-    
-    
     margin: 0px;
     padding: 0px;
     justify-content: space-between;
+ 
+    
 
     @media screen and (max-width: $tablet-top)
     {
         flex-wrap: wrap;
+        margin: -15px;
     }
     
 }
@@ -43,7 +41,8 @@
     @media screen and (max-width: $tablet-top) {
         margin: 15px;}
 
-        @media screen and (min-width: $tablet) {
+        @media screen and (min-width: $tablet)
+         {
             width: calc((100% - 6 * 15px) / 3)}
 
 
@@ -79,12 +78,6 @@
     }
 }
 
-// .costumer-subtitle
-// {
-//     display: none;
-//     margin: 0px;
-//     padding: 0px;
-// }
 
 
 

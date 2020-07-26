@@ -453,17 +453,28 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .advantages-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .advantages-link:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-link {
+    margin: 15px;
+    width: calc((100% - 4 * 15px) / 2);
   }
 }
 
@@ -555,6 +566,27 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: -15px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .team-item {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -567,12 +599,17 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .team-item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .team-item {
-    width: calc((100%-90px) / 4);
-  }
-  .team-item:not(:last-child) {
-    margin-right: 30px;
+    width: calc((100%- 3 * 30px) / 6);
+    margin: 15px;
   }
 }
 
@@ -693,12 +730,6 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1199px) {
-  .costumer-section {
-    margin: -15px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .costumer-section {
     padding-top: 94px;
@@ -721,6 +752,7 @@ img {
   .custumer-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -1133,9 +1165,67 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .footer-list {
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 18px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-box {
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-box {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-join {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-input-box {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input-box {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list:not(:last-child) {
+    margin-right: 69px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1270,6 +1360,10 @@ img {
   fill: #FFFFFF;
 }
 
+.footer-auth-item:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-sign {
   margin-right: 10px;
 }
@@ -1293,6 +1387,14 @@ img {
   color: #2F303A;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .input-footer {
   width: 100%;
   padding: 15px 16px;
@@ -1302,13 +1404,19 @@ img {
   background-color: #2F303A;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .input-footer {
     margin-bottom: 20px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .input-footer {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .input-footer {
     min-width: 358px;
     margin-right: 12px;
@@ -1351,6 +1459,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 4px;
+  border-color: transparent;
   background-color: #2196F3;
   color: #FFFFFF;
 }
@@ -1360,7 +1470,7 @@ img {
   color: #2F303A;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .button-footer {
     margin-right: auto;
     margin-left: auto;
