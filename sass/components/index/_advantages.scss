@@ -46,9 +46,18 @@
 
 // .advantages-link
 // {
+//     &:not(:last-child) {
+//     @media screen and (min-width: $desctop) 
+//        {margin-bottom: 30px;}
+// }
+    
 // width: calc((100%-90px) / 4);
 // }
 
+.advantages-link:not(:last-child) {
+    @media screen and (max-width: $tablet-top) 
+       {margin-bottom: 30px;}
+}
 
 // .advantages-link:not(:last-child)
 // {
